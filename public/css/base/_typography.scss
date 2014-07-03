@@ -1,0 +1,62 @@
+// Font-face
+
+@include font-face(MyriadPro, '../fonts/MyriadPro-Light', 200, normal);
+
+body {
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height : $unitless-line-height;
+	color : $base-font-color; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family : $header-font-family;
+	font-weight : $header-font-weight;
+	margin: 0;
+	text-rendering : optimizelegibility;
+}
+
+h1 {
+	font-size: $h1-font-size;
+}
+
+h2 { 
+	font-size: $h2-font-size;
+}
+
+h3 { 
+	font-size: $h3-font-size;
+}
+
+h4 { 
+	font-size: $h4-font-size;
+}
+
+h5 { 
+	font-size: $h5-font-size;
+}
+
+h6 { 
+	font-size: $h6-font-size;
+}
+
+p {
+  margin: 0 0 ($base-line-height * .5);
+}
+
+a {
+  @include transition(color 0.1s linear);
+  color: $base-link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: $hover-link-color;
+  }
+
+  &:active, &:focus {
+    color: $hover-link-color;
+    outline: none;
+  }
+}

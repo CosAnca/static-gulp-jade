@@ -1,0 +1,21 @@
+{
+  "name": "gulp-static-template",
+  "version": "0.1.0",
+  "description": "Static sites with Gulp and Jade",
+  "main": "gulp.js",
+  "devDependencies": {
+    "browser-sync": "^0.8.2",
+    "gulp": "^3.8.0",
+    "gulp-plumber": "~0.6.3",
+    "gulp-jade": "~0.6.0",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-ruby-sass": "0.5.0",
+    "gulp-concat": "~2.2.0",
+    "gulp-uglify": "~0.3.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cosmin Anca",
+  "license": "MIT"
+}

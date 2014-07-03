@@ -1,0 +1,190 @@
+// Prevents iOS text size adjust after orientation change, without disabling user zoom
+// www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+}
+
+// Corrects block display not defined in IE8/9 & FF3
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+// Corrects inline-block display not defined in IE8/9 & FF3
+audio, canvas, video, progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+// Prevents modern browsers from displaying 'audio' without controls
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+// Addresses styling for 'hidden' attribute not present in IE8/9, FF3, S4
+[hidden], template {
+  display: none;
+}
+
+// Addresses font-family inconsistency between 'textarea' and other form elements.
+html, button, input, select, textarea {
+  font-family: sans-serif;
+}
+
+a {
+  // Improves readability when focused and also mouse hovered in all browsers
+  // people.opera.com/patrickl/experiments/keyboard/test
+  &:hover, &:active {
+    outline: 0;
+  }
+}
+
+// Addresses styling not present in IE8/9, S5, Chrome
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+// Addresses style set to 'bolder' in FF3+, S4/5, Chrome
+b, strong {
+  font-weight: bold;
+}
+
+// Addresses styling not present in S5, Chrome
+dfn {
+  font-style: italic;
+}
+
+// Addresses styling not present in IE8/9
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+// Corrects font family set oddly in S4/5, Chrome
+// en.wikipedia.org/wiki/User:Davidgothberg/Test59
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+// Improves readability of pre-formatted text in all browsers
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+// Removes border when inside 'a' element in IE8/9, FF3
+img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic;
+}
+
+// Corrects overflow displayed oddly in IE9
+svg:not(:root) {
+  overflow: hidden;
+}
+
+// Define consistent border, margin, and padding
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0; // Corrects color not being inherited in IE8/9
+  padding: 0;
+  white-space: normal; // Corrects text not wrapping in FF3
+}
+
+button, input, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button, 
+input[type="button"] {
+  cursor: pointer; // Improves usability and consistency of cursor style between image-type 'input' and others
+  -webkit-appearance: button; // Corrects inability to style clickable 'input' types in iOS
+}
+
+input {
+  &[type="reset"], &[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+  }
+}
+
+// Re-set default cursor for disabled elements
+button[disabled], 
+input[disabled] {
+  cursor: default;
+}
+
+input {
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  line-height: normal;
+  &[type="checkbox"], &[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+  }
+  &[type="number"] {
+    &::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+      height: auto;
+    }
+  }
+  &[type="search"] {
+    box-sizing: content-box;
+    &::-webkit-search-cancel-button, &::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+  }
+}
+
+textarea {
+  overflow: auto; // Removes default vertical scrollbar in IE8/9
+  vertical-align: top; // Improves readability and alignment in all browsers
+}
+
+// Remove most spacing between table cells
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}

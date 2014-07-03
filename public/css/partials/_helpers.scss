@@ -1,0 +1,25 @@
+.sprite {
+	background-image: url(sprite.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	float:left;
+}
+
+.right {
+	float:right;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}

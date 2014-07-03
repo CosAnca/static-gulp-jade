@@ -1,0 +1,12 @@
+//- Add menu links to the menuItems variable below
+- var menuItems = ['home', 'about', 'contact']
+
+nav
+	ul.menu
+		each item in menuItems
+			if item == 'home'
+				li
+					a(href="index.html") #{item}
+			else
+				li
+					a(href="#{item}.html") #{item}

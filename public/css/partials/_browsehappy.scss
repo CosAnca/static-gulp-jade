@@ -1,0 +1,15 @@
+.browsehappy {
+	@include position(fixed, 0px 0px 0px 0px);
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    z-index: 1000;
+    
+    p {
+    	@include position(fixed, 40% null null 50%);
+	    width: 900px;
+	    margin-left: -450px;
+	    font-size: 30px;
+	    font-weight: 300;
+	    color: #fff;
+    }
+}

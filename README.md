@@ -1,5 +1,5 @@
-Static sites template with Jade, Scss and Gulp.js
-=================================================
+Static sites with Jade, Scss and Gulp.js
+========================================
 
 The template includes:
 

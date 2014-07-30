@@ -12,18 +12,9 @@ gulp.task('default', ['browser-sync', 'watch']);
 
 // Watch task
 gulp.task('watch', function() {
-  gulp.watch('*.html');
   gulp.watch('*.jade', ['jade']);
-  gulp.watch('public/css/*.scss', ['sass']);
+  gulp.watch('public/css/**/*.scss', ['sass']);
   gulp.watch('public/js/*.js', ['js']);
-});
-
-// HTML task
-gulp.task('html', function() {
-  return gulp.src('*.html')
-  .pipe(plumber())
-  .pipe(gulp.dest('Build/'))
-  .pipe(browserSync.reload({stream:true}));
 });
 
 // Jade task
@@ -39,7 +30,7 @@ gulp.task('jade', function() {
 
 // Sass task
 gulp.task('sass', function() {
-  return gulp.src('public/css/*.scss')
+  return gulp.src('public/css/**/*.scss')
   .pipe(plumber())
   .pipe(sass())
   .pipe(prefix(['last 2 versions'], {
@@ -65,7 +56,7 @@ gulp.task('js', function() {
 });
 
 // Browser-sync task
-gulp.task('browser-sync', ['html', 'jade', 'sass', 'js'], function() {
+gulp.task('browser-sync', ['jade', 'sass', 'js'], function() {
   return browserSync.init(null, {
     server: {
       baseDir: 'Build'

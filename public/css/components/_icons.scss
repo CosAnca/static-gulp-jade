@@ -1,0 +1,19 @@
+@include font-face(Icons, '../fonts/fontello');
+
+%icon:before {
+  color: lighten($base-font-color, 40);
+  display: block;
+  font-family: "fontello";
+  font-size: .75em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  speak: none;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: none;
+}
+
+%speed:before {
+  content: '\e80d';
+}

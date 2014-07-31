@@ -1,10 +1,19 @@
+// Variables
+@import "variables";
+
+// Neat Settings -- uncomment if using Neat -- must be imported before Neat
+// @import "grid-settings";
+
 // Extends
 @import "extends/button";
+@import "extends/clearfix";
+@import "extends/errors";
+@import "extends/flashes";
+@import "extends/hide-text";
 
-//Typography and elements
+// Typography and Elements
 @import "typography";
-@import "lists";
 @import "forms";
-//@import "tables";
-//@import "quotes";
-//@import "buttons";
+@import "tables";
+@import "lists";
+@import "buttons";

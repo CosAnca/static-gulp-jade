@@ -136,49 +136,6 @@ table {
 td, th {
   padding: 0; }
 
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
-
-.sprite {
-  background-image: url(sprite.png);
-  background-repeat: no-repeat;
-  overflow: hidden; }
-
-.center {
-  text-align: center; }
-
-.left {
-  float: left; }
-
-.right {
-  float: right; }
-
-.hidden {
-  display: none; }
-
-.invisible {
-  visibility: hidden; }
-
-.browsehappy {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.8);
-  text-align: center;
-  z-index: 1000; }
-  .browsehappy p {
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    width: 900px;
-    margin-left: -450px;
-    font-size: 30px;
-    font-weight: 300;
-    color: #fff; }
-
 button,
 input[type="submit"] {
   -webkit-font-smoothing: antialiased;
@@ -396,6 +353,49 @@ input[type="submit"] {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.sprite {
+  background-image: url("../images/sprite.png");
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+.center {
+  text-align: center; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.hidden {
+  display: none; }
+
+.invisible {
+  visibility: hidden; }
+
+.browsehappy {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  z-index: 1000; }
+  .browsehappy p {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    width: 900px;
+    margin-left: -450px;
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff; }
 
 @font-face {
   font-family: Icons;

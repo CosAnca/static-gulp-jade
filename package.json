@@ -4,14 +4,14 @@
   "description": "Static sites with Gulp and Jade",
   "main": "gulp.js",
   "devDependencies": {
-    "browser-sync": "^0.8.2",
+    "browser-sync": "^1.7.2",
     "gulp": "^3.8.0",
-    "gulp-plumber": "~0.6.3",
-    "gulp-jade": "~0.6.0",
-    "gulp-autoprefixer": "0.0.7",
-    "gulp-ruby-sass": "0.5.0",
-    "gulp-concat": "~2.2.0",
-    "gulp-uglify": "~0.3.1"
+    "gulp-plumber": "^0.6.6",
+    "gulp-jade": "^0.10.0",
+    "gulp-autoprefixer": "2.0.0",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-concat": "^2.4.2",
+    "gulp-uglify": "1.0.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

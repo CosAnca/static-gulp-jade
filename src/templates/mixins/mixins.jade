@@ -1,0 +1,9 @@
+//- This is where you define your Jade mixins
+
+//- simple list of links
+mixin list(listItems)
+	ul.my-list
+		- each item in listItems
+			li
+				a(href="")= item
+	

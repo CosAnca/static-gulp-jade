@@ -1,0 +1,12 @@
+//- To use Jade mixins include the mixins file below
+include mixins/mixins
+
+extends includes/layout
+
+block content
+
+	h1.center= title
+	p.center= description
+
+	//- This is where you include your footer
+	include includes/_footer/_footer

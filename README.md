@@ -1,17 +1,22 @@
 Static sites with Jade, Scss and Gulp.js
 ========================================
 
+Dependencies:
+
+- sass v3.3+
+- node.js
+- npm v2.0+
+- gulp
+
 The template includes:
 
 - Jade
 - Plain HTML
-- Sass (3.3)
+- Sass (3.3+)
 - Bourbon/Neat/Bitters
 - Autoprefixer
 - BrowserSync
 - Gulp.js
-- Nanoscroller
-- BXSlider
 
 To get started:
 

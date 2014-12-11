@@ -1,0 +1,28 @@
+// Single side border radius
+@mixin border-top-radius($radius: $base-border-radius) {
+	border-top-right-radius: $radius;
+	border-top-left-radius: $radius;
+}
+
+@mixin border-right-radius($radius: $base-border-radius) {
+	border-top-right-radius: $radius;
+	border-bottom-right-radius: $radius;
+}
+
+@mixin border-bottom-radius($radius: $base-border-radius) {
+	border-bottom-right-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+@mixin border-left-radius($radius: $base-border-radius) {
+	border-top-left-radius: $radius;
+	border-bottom-left-radius: $radius;
+}
+
+// Hoverer
+@mixin hoverer($property, $normal, $hovered) {
+	#{$property}: $normal;
+	&:hover {
+		#{$property}: $hovered;
+	}
+}

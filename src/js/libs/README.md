@@ -1,0 +1,1 @@
+First-party generic libraries and modules should be placed here, i.e. ones that get used project to project

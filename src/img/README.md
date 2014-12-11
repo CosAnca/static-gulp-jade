@@ -1,0 +1,1 @@
+All images placed here will be optimised via grunt-contrib-imagemin
